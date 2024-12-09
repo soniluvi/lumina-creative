@@ -237,16 +237,24 @@ img {
 
 .contact input,
 .contact textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   border: none;
   border-bottom: 1px #333 solid;
   width: 100%;
   font-family: inherit;
   font-size: inherit;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact textarea {
   height: 200px;
+  max-width: 100%;
+  resize: vertical;
 }
 
 .contact input:focus,
