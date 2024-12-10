@@ -46,7 +46,6 @@ img {
 }
 
 .btn {
-  display: inline-block;
   padding: 1rem 2rem;
   border: 1px solid #333;
   background-color: transparent;
@@ -235,28 +234,29 @@ img {
   margin: 2rem 0;
 }
 
-.contact .from-group {
+.contact-flex {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  align-self: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
 }
 
 .contact input,
 .contact textarea {
-  border: none;
+  /* border-top: 1px #333 solid;
   border-bottom: 1px #333 solid;
+  border-left: none;
+  border-right: none; */
+  border: 1px #333 solid;
+  border-radius: 3px;
   width: 100%;
   font-family: inherit;
   font-size: inherit;
-  padding-top: 2rem;
+  padding: 1rem 0.5rem;
 }
 
 .contact textarea {
-  border-top: 1px #333 solid;
-  border-bottom: 1px #333 solid;
-  border-left: none;
-  border-right: none;
+  display: block;
   min-height: 200px;
   resize: vertical;
   padding-top: 0;
