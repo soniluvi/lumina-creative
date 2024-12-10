@@ -49,13 +49,11 @@ img {
   display: inline-block;
   padding: 1rem 2rem;
   border: 1px solid #333;
-  border-radius: 3px;
   background-color: transparent;
   color: #333;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
-  min-width: 90ch;
 }
 
 .btn:hover {
@@ -74,7 +72,7 @@ img {
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   white-space: nowrap;
   width: 1px;
 }
@@ -233,34 +231,35 @@ img {
   margin-bottom: 2rem;
 }
 
-.flex-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .from-group {
   margin: 2rem 0;
 }
 
+.contact .from-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  align-self: flex-end;
+}
+
 .contact input,
 .contact textarea {
-  border: 1px #333 solid;
-  border-radius: 3px;
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
   font-family: inherit;
   font-size: inherit;
-  padding: 0.8rem;
-  min-width: 90ch;
+  padding-top: 2rem;
 }
 
 .contact textarea {
-  display: block;
-  border: 1px #333 solid;
+  border-top: 1px #333 solid;
+  border-bottom: 1px #333 solid;
+  border-left: none;
+  border-right: none;
   min-height: 200px;
   resize: vertical;
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .contact input:focus,
